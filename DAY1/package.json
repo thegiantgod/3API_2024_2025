@@ -1,0 +1,22 @@
+{
+  "name": "day-1",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./main.js",
+    "cli": "node ./cliCalculator.js addd 4 12",
+    "todos": "node ./todosMain.js",
+    "server": "nodemon ./todoWeb.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "type": "commonjs"
+}
