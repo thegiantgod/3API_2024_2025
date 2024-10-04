@@ -1,6 +1,5 @@
 var express = require('express');
 const UserModel = require("../models/userSchema");
-const userSchema = require('../models/userSchema');
 var router = express.Router();
 
 /* GET users listing. */
@@ -28,7 +27,7 @@ router.get("/:id", function(req, res, next) {
     res.status(400).send("You need to send an ID first !");
   }
 
-  userSchema.findById(id).then(user => {
+  UserModel.findById(id).then(user => {
     if (!user) {
       res.status(404);
       res.send("User not found !");
